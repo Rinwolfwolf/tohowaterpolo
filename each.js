@@ -1670,3 +1670,8 @@ var kadena13 = localStorage.getItem('tokutenF1-13');
 $('.kadena13').text(kadena13);
 var ishigaki13 = localStorage.getItem('hazushiF1-13');
 $('.ishigaki13').text(ishigaki13);
+
+var snow = document.getElementById('snow');
+snow.onclick = function () {
+    localStorage.clear();
+}
