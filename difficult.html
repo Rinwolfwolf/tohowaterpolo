@@ -1,0 +1,27 @@
+<!DOCTYPE>
+<html lang=ja>
+
+<head>
+    <meta charset="UTF-8">
+    <title>桐朋水泳部</title>
+</head>
+
+<body>
+    <script>
+        Language = "JavaScript"
+        result = prompt("パスワードを入れて下さい", "");
+        if (result != "TOHO76") {
+            alert("パスワードが違います！")
+            location.href = "caution.htm";
+        }
+        else {
+            F = new Date();
+            S = F.getTime();
+            document.cookie = "&chk=" + S + "&end";
+            location.href = "home.html";
+        }
+                //-->
+    </script>
+</body>
+
+</html>
