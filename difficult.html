@@ -20,13 +20,21 @@
 </head>
 
 <body>
-    <div class="col-xs-6">
-        <input type="text" class="form-control" placeholder="パスワード" id="clear">
-    </div>
-    <div class="col-xs-6">
-    </div>
-    <button id="ready">決定</button>
-    <script type="text/javascript" src="difficult.js"></script>
+    <script>
+        Language = "JavaScript"
+        result = prompt("パスワードを入れて下さい", "");
+        if (result != "TOHO76") {
+            alert("パスワードが違います！")
+            location.href = "caution.htm";
+        }
+        else {
+            F = new Date();
+            S = F.getTime();
+            document.cookie = "&chk=" + S + "&end";
+            location.href = "home.html";
+        }
+                //-->
+    </script>
 </body>
 
 </html>
