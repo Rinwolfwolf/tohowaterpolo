@@ -664,3 +664,110 @@ know.onclick = function () {
     var pas13 = psuc13Number / (psuc13Number + pmiss13Number) * 100;
     pass13.value = pas13;
 };
+
+var fact = document.getElementById('fact');
+fact.onclick = function () {
+    var bcut1 = document.getElementById('bcut1').value;
+    var bcut1Number = parseInt(bcut1, 10);
+    var symiss1 = document.getElementById('symiss1').value;
+    var symiss1Number = parseInt(symiss1, 10);
+    var shoot1 = document.getElementById('shoot1');
+    var shot1 = bcut1Number / (bcut1Number + symiss1Number) * 100;
+    shoot1.value = shot1;
+
+    var bcut2 = document.getElementById('bcut2').value;
+    var bcut2Number = parseInt(bcut2, 10);
+    var symiss2 = document.getElementById('symiss2').value;
+    var symiss2Number = parseInt(symiss2, 10);
+    var shoot2 = document.getElementById('shoot2');
+    var shot2 = bcut2Number / (bcut2Number + symiss2Number) * 100;
+    shoot2.value = shot2;
+
+    var bcut3 = document.getElementById('bcut3').value;
+    var bcut3Number = parseInt(bcut3, 10);
+    var symiss3 = document.getElementById('symiss3').value;
+    var symiss3Number = parseInt(symiss3, 10);
+    var shoot3 = document.getElementById('shoot3');
+    var shot3 = bcut3Number / (bcut3Number + symiss3Number) * 100;
+    shoot3.value = shot3;
+
+    var bcut4 = document.getElementById('bcut4').value;
+    var bcut4Number = parseInt(bcut4, 10);
+    var symiss4 = document.getElementById('symiss4').value;
+    var symiss4Number = parseInt(symiss4, 10);
+    var shoot4 = document.getElementById('shoot4');
+    var shot4 = bcut4Number / (bcut4Number + symiss4Number) * 100;
+    shoot4.value = shot4;
+
+    var bcut5 = document.getElementById('bcut5').value;
+    var bcut5Number = parseInt(bcut5, 10);
+    var symiss5 = document.getElementById('symiss5').value;
+    var symiss5Number = parseInt(symiss5, 10);
+    var shoot5 = document.getElementById('shoot5');
+    var shot5 = bcut5Number / (bcut5Number + symiss5Number) * 100;
+    shoot5.value = shot5;
+
+    var bcut6 = document.getElementById('bcut6').value;
+    var bcut6Number = parseInt(bcut6, 10);
+    var symiss6 = document.getElementById('symiss6').value;
+    var symiss6Number = parseInt(symiss6, 10);
+    var shoot6 = document.getElementById('shoot6');
+    var shot6 = bcut6Number / (bcut6Number + symiss6Number) * 100;
+    shoot6.value = shot6;
+
+    var bcut7 = document.getElementById('bcut7').value;
+    var bcut7Number = parseInt(bcut7, 10);
+    var symiss7 = document.getElementById('symiss7').value;
+    var symiss7Number = parseInt(symiss7, 10);
+    var shoot7 = document.getElementById('shoot7');
+    var shot7 = bcut7Number / (bcut7Number + symiss7Number) * 100;
+    shoot7.value = shot7;
+
+    var bcut8 = document.getElementById('bcut8').value;
+    var bcut8Number = parseInt(bcut8, 10);
+    var symiss8 = document.getElementById('symiss8').value;
+    var symiss8Number = parseInt(symiss8, 10);
+    var shoot8 = document.getElementById('shoot8');
+    var shot8 = bcut8Number / (bcut8Number + symiss8Number) * 100;
+    shoot8.value = shot8;
+
+    var bcut9 = document.getElementById('bcut9').value;
+    var bcut9Number = parseInt(bcut9, 10);
+    var symiss9 = document.getElementById('symiss9').value;
+    var symiss9Number = parseInt(symiss9, 10);
+    var shoot9 = document.getElementById('shoot9');
+    var shot9 = bcut9Number / (bcut9Number + symiss9Number) * 100;
+    shoot9.value = shot9;
+
+    var bcut10 = document.getElementById('bcut10').value;
+    var bcut10Number = parseInt(bcut10, 10);
+    var symiss10 = document.getElementById('symiss10').value;
+    var symiss10Number = parseInt(symiss10, 10);
+    var shoot10 = document.getElementById('shoot10');
+    var shot10 = bcut10Number / (bcut10Number + symiss10Number) * 100;
+    shoot10.value = shot10;
+
+    var bcut11 = document.getElementById('bcut11').value;
+    var bcut11Number = parseInt(bcut11, 10);
+    var symiss11 = document.getElementById('symiss11').value;
+    var symiss11Number = parseInt(symiss11, 10);
+    var shoot11 = document.getElementById('shoot11');
+    var shot11 = bcut11Number / (bcut11Number + symiss11Number) * 100;
+    shoot11.value = shot11;
+
+    var bcut12 = document.getElementById('bcut12').value;
+    var bcut12Number = parseInt(bcut12, 10);
+    var symiss12 = document.getElementById('symiss12').value;
+    var symiss12Number = parseInt(symiss12, 10);
+    var shoot12 = document.getElementById('shoot12');
+    var shot12 = bcut12Number / (bcut12Number + symiss12Number) * 100;
+    shoot12.value = shot12;
+
+    var bcut13 = document.getElementById('bcut13').value;
+    var bcut13Number = parseInt(bcut13, 10);
+    var symiss13 = document.getElementById('symiss13').value;
+    var symiss13Number = parseInt(symiss13, 10);
+    var shoot13 = document.getElementById('shoot13');
+    var shot13 = bcut13Number / (bcut13Number + symiss13Number) * 100;
+    shoot13.value = shot13;
+};
