@@ -28,6 +28,10 @@
         .three {
             width: 30%;
         }
+
+        .four {
+            max-width: 100%;
+        }
     </style>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 
@@ -47,248 +51,250 @@
 
 
     <div class="row">
-        <div class="col-xs-10 col-lg-10">
-            <table border="1" width="50%" height="30%" max-width="100%">
-                <tr class="header">
-                    <th bgcolor="#E0F2F7">番号</th>
-                    <th bgcolor="#E0F2F7">退水誘発</th>
-                    <th bgcolor="#E0F2F7">パスカット</th>
-                    <th bgcolor="#E0F2F7">バックカット</th>
-                    <th bgcolor="#E0F2F7">プレスカット</th>
-                    <th bgcolor="#E0F2F7">ハンドアップ</th>
-                    <th bgcolor="#E0F2F7">パス成功</th>
-                    <th bgcolor="#E0F2F7">パスミス</th>
-                    <th bgcolor="#E0F2F7">ファール</th>
-                    <th bgcolor="#E0F2F7">退水</th>
-                    <th bgcolor="#E0F2F7">フローティング</th>
-                    <th bgcolor="#E0F2F7">フローティングミス</th>
-                    <th bgcolor="#E0F2F7">カットイン</th>
-                    <th bgcolor="#E0F2F7">シュート成功</th>
-                    <th bgcolor="#E0F2F7">シュートミス</th>
+        <div class="four">
+            <div class="col-xs-10 col-lg-10">
+                <table border="1" width="50%" height="30%" max-width="100%">
+                    <tr class="header">
+                        <th bgcolor="#E0F2F7">番号</th>
+                        <th bgcolor="#E0F2F7">退水誘発</th>
+                        <th bgcolor="#E0F2F7">パスカット</th>
+                        <th bgcolor="#E0F2F7">バックカット</th>
+                        <th bgcolor="#E0F2F7">プレスカット</th>
+                        <th bgcolor="#E0F2F7">ハンドアップ</th>
+                        <th bgcolor="#E0F2F7">パス成功</th>
+                        <th bgcolor="#E0F2F7">パスミス</th>
+                        <th bgcolor="#E0F2F7">ファール</th>
+                        <th bgcolor="#E0F2F7">退水</th>
+                        <th bgcolor="#E0F2F7">フローティング</th>
+                        <th bgcolor="#E0F2F7">フローティングミス</th>
+                        <th bgcolor="#E0F2F7">カットイン</th>
+                        <th bgcolor="#E0F2F7">シュート成功</th>
+                        <th bgcolor="#E0F2F7">シュートミス</th>
 
-                </tr>
-                <tr bgcolor="#E0F2F7">
-                    <td>１番</td>
-                    <td><input type="text" id="asist1"></td>
-                    <td><input type="text" id="pcut1"></td>
-                    <td><input type="text" id="count1"></td>
-                    <td><input type="text" id="plcut1"></td>
-                    <td><input type="text" id="hup1"></td>
-                    <td><input type="text" id="psuc1"></td>
-                    <td><input type="text" id="pmiss1"></td>
-                    <td><input type="text" id="faul1"></td>
-                    <td><input type="text" id="pfaul1"></td>
-                    <td><input type="text" id="floot1"></td>
-                    <td><input type="text" id="flotmiss1"></td>
-                    <td><input type="text" id="cutin1"></td>
-                    <td><input type="text" id="bcut1"></td>
-                    <td><input type="text" id="symiss1"></td>
-                </tr>
-                <tr bgcolor="#E0F2F7">
-                    <td>２番</td>
-                    <td><input type="text" id="asist2"></td>
-                    <td><input type="text" id="pcut2"></td>
-                    <td><input type="text" id="count2"></td>
-                    <td><input type="text" id="plcut2"></td>
-                    <td><input type="text" id="hup2"></td>
-                    <td><input type="text" id="psuc2"></td>
-                    <td><input type="text" id="pmiss2"></td>
-                    <td><input type="text" id="faul2"></td>
-                    <td><input type="text" id="pfaul2"></td>
-                    <td><input type="text" id="floot2"></td>
-                    <td><input type="text" id="flotmiss2"></td>
-                    <td><input type="text" id="cutin2"></td>
-                    <td><input type="text" id="bcut2"></td>
-                    <td><input type="text" id="symiss2"></td>
-                </tr>
-                <tr bgcolor="#E0F2F7">
-                    <td>３番</td>
-                    <td><input type="text" id="asist3"></td>
-                    <td><input type="text" id="pcut3"></td>
-                    <td><input type="text" id="count3"></td>
-                    <td><input type="text" id="plcut3"></td>
-                    <td><input type="text" id="hup3"></td>
-                    <td><input type="text" id="psuc3"></td>
-                    <td><input type="text" id="pmiss3"></td>
-                    <td><input type="text" id="faul3"></td>
-                    <td><input type="text" id="pfaul3"></td>
-                    <td><input type="text" id="floot3"></td>
-                    <td><input type="text" id="flotmiss3"></td>
-                    <td><input type="text" id="cutin3"></td>
-                    <td><input type="text" id="bcut3"></td>
-                    <td><input type="text" id="symiss3"></td>
-                </tr>
-                <tr bgcolor="#E0F2F7">
-                    <td>４番</td>
-                    <td><input type="text" id="asist4"></td>
-                    <td><input type="text" id="pcut4"></td>
-                    <td><input type="text" id="count4"></td>
-                    <td><input type="text" id="plcut4"></td>
-                    <td><input type="text" id="hup4"></td>
-                    <td><input type="text" id="psuc4"></td>
-                    <td><input type="text" id="pmiss4"></td>
-                    <td><input type="text" id="faul4"></td>
-                    <td><input type="text" id="pfaul4"></td>
-                    <td><input type="text" id="floot4"></td>
-                    <td><input type="text" id="flotmiss4"></td>
-                    <td><input type="text" id="cutin4"></td>
-                    <td><input type="text" id="bcut4"></td>
-                    <td><input type="text" id="symiss4"></td>
-                </tr>
-                <tr bgcolor="#E0F2F7">
-                    <td>５番</td>
-                    <td><input type="text" id="asist5"></td>
-                    <td><input type="text" id="pcut5"></td>
-                    <td><input type="text" id="count5"></td>
-                    <td><input type="text" id="plcut5"></td>
-                    <td><input type="text" id="hup5"></td>
-                    <td><input type="text" id="psuc5"></td>
-                    <td><input type="text" id="pmiss5"></td>
-                    <td><input type="text" id="faul5"></td>
-                    <td><input type="text" id="pfaul5"></td>
-                    <td><input type="text" id="floot5"></td>
-                    <td><input type="text" id="flotmiss5"></td>
-                    <td><input type="text" id="cutin5"></td>
-                    <td><input type="text" id="bcut5"></td>
-                    <td><input type="text" id="symiss5"></td>
-                </tr>
-                <tr bgcolor="#E0F2F7">
-                    <td>６番</td>
-                    <td><input type="text" id="asist6"></td>
-                    <td><input type="text" id="pcut6"></td>
-                    <td><input type="text" id="count6"></td>
-                    <td><input type="text" id="plcut6"></td>
-                    <td><input type="text" id="hup6"></td>
-                    <td><input type="text" id="psuc6"></td>
-                    <td><input type="text" id="pmiss6"></td>
-                    <td><input type="text" id="faul6"></td>
-                    <td><input type="text" id="pfaul6"></td>
-                    <td><input type="text" id="floot6"></td>
-                    <td><input type="text" id="flotmiss6"></td>
-                    <td><input type="text" id="cutin6"></td>
-                    <td><input type="text" id="bcut6"></td>
-                    <td><input type="text" id="symiss6"></td>
-                </tr>
-                <tr bgcolor="#E0F2F7">
-                    <td>７番</td>
-                    <td><input type="text" id="asist7"></td>
-                    <td><input type="text" id="pcut7"></td>
-                    <td><input type="text" id="count7"></td>
-                    <td><input type="text" id="plcut7"></td>
-                    <td><input type="text" id="hup7"></td>
-                    <td><input type="text" id="psuc7"></td>
-                    <td><input type="text" id="pmiss7"></td>
-                    <td><input type="text" id="faul7"></td>
-                    <td><input type="text" id="pfaul7"></td>
-                    <td><input type="text" id="floot7"></td>
-                    <td><input type="text" id="flotmiss7"></td>
-                    <td><input type="text" id="cutin7"></td>
-                    <td><input type="text" id="bcut7"></td>
-                    <td><input type="text" id="symiss7"></td>
-                </tr>
-                <tr bgcolor="#E0F2F7">
-                    <td>８番</td>
-                    <td><input type="text" id="asist8"></td>
-                    <td><input type="text" id="pcut8"></td>
-                    <td><input type="text" id="count8"></td>
-                    <td><input type="text" id="plcut8"></td>
-                    <td><input type="text" id="hup8"></td>
-                    <td><input type="text" id="psuc8"></td>
-                    <td><input type="text" id="pmiss8"></td>
-                    <td><input type="text" id="faul8"></td>
-                    <td><input type="text" id="pfaul8"></td>
-                    <td><input type="text" id="floot8"></td>
-                    <td><input type="text" id="flotmiss8"></td>
-                    <td><input type="text" id="cutin8"></td>
-                    <td><input type="text" id="bcut8"></td>
-                    <td><input type="text" id="symiss8"></td>
-                </tr>
-                <tr bgcolor="#E0F2F7">
-                    <td>９番</td>
-                    <td><input type="text" id="asist9"></td>
-                    <td><input type="text" id="pcut9"></td>
-                    <td><input type="text" id="count9"></td>
-                    <td><input type="text" id="plcut9"></td>
-                    <td><input type="text" id="hup9"></td>
-                    <td><input type="text" id="psuc9"></td>
-                    <td><input type="text" id="pmiss9"></td>
-                    <td><input type="text" id="faul9"></td>
-                    <td><input type="text" id="pfaul9"></td>
-                    <td><input type="text" id="floot9"></td>
-                    <td><input type="text" id="flotmiss9"></td>
-                    <td><input type="text" id="cutin9"></td>
-                    <td><input type="text" id="bcut9"></td>
-                    <td><input type="text" id="symiss9"></td>
-                </tr>
-                <tr bgcolor="#E0F2F7">
-                    <td>１０番</td>
-                    <td><input type="text" id="asist10"></td>
-                    <td><input type="text" id="pcut10"></td>
-                    <td><input type="text" id="count10"></td>
-                    <td><input type="text" id="plcut10"></td>
-                    <td><input type="text" id="hup10"></td>
-                    <td><input type="text" id="psuc10"></td>
-                    <td><input type="text" id="pmiss10"></td>
-                    <td><input type="text" id="faul10"></td>
-                    <td><input type="text" id="pfaul10"></td>
-                    <td><input type="text" id="floot10"></td>
-                    <td><input type="text" id="flotmiss10"></td>
-                    <td><input type="text" id="cutin10"></td>
-                    <td><input type="text" id="bcut10"></td>
-                    <td><input type="text" id="symiss10"></td>
-                </tr>
-                <tr bgcolor="#E0F2F7">
-                    <td>１１番</td>
-                    <td><input type="text" id="asist11"></td>
-                    <td><input type="text" id="pcut11"></td>
-                    <td><input type="text" id="count11"></td>
-                    <td><input type="text" id="plcut11"></td>
-                    <td><input type="text" id="hup11"></td>
-                    <td><input type="text" id="psuc11"></td>
-                    <td><input type="text" id="pmiss11"></td>
-                    <td><input type="text" id="faul11"></td>
-                    <td><input type="text" id="pfaul11"></td>
-                    <td><input type="text" id="floot11"></td>
-                    <td><input type="text" id="flotmiss11"></td>
-                    <td><input type="text" id="cutin11"></td>
-                    <td><input type="text" id="bcut11"></td>
-                    <td><input type="text" id="symiss11"></td>
-                </tr>
-                <tr bgcolor="#E0F2F7">
-                    <td>１２番</td>
-                    <td><input type="text" id="asist12"></td>
-                    <td><input type="text" id="pcut12"></td>
-                    <td><input type="text" id="count12"></td>
-                    <td><input type="text" id="plcut12"></td>
-                    <td><input type="text" id="hup12"></td>
-                    <td><input type="text" id="psuc12"></td>
-                    <td><input type="text" id="pmiss12"></td>
-                    <td><input type="text" id="faul12"></td>
-                    <td><input type="text" id="pfaul12"></td>
-                    <td><input type="text" id="floot12"></td>
-                    <td><input type="text" id="flotmiss12"></td>
-                    <td><input type="text" id="cutin12"></td>
-                    <td><input type="text" id="bcut12"></td>
-                    <td><input type="text" id="symiss12"></td>
-                </tr>
-                <tr bgcolor="#E0F2F7">
-                    <td>１３番</td>
-                    <td><input type="text" id="asist13"></td>
-                    <td><input type="text" id="pcut13"></td>
-                    <td><input type="text" id="count13"></td>
-                    <td><input type="text" id="plcut13"></td>
-                    <td><input type="text" id="hup13"></td>
-                    <td><input type="text" id="psuc13"></td>
-                    <td><input type="text" id="pmiss13"></td>
-                    <td><input type="text" id="faul13"></td>
-                    <td><input type="text" id="pfaul13"></td>
-                    <td><input type="text" id="floot13"></td>
-                    <td><input type="text" id="flotmiss13"></td>
-                    <td><input type="text" id="cutin13"></td>
-                    <td><input type="text" id="bcut13"></td>
-                    <td><input type="text" id="symiss13"></td>
-                </tr>
-            </table>
+                    </tr>
+                    <tr bgcolor="#E0F2F7">
+                        <td>１番</td>
+                        <td><input type="text" id="asist1"></td>
+                        <td><input type="text" id="pcut1"></td>
+                        <td><input type="text" id="count1"></td>
+                        <td><input type="text" id="plcut1"></td>
+                        <td><input type="text" id="hup1"></td>
+                        <td><input type="text" id="psuc1"></td>
+                        <td><input type="text" id="pmiss1"></td>
+                        <td><input type="text" id="faul1"></td>
+                        <td><input type="text" id="pfaul1"></td>
+                        <td><input type="text" id="floot1"></td>
+                        <td><input type="text" id="flotmiss1"></td>
+                        <td><input type="text" id="cutin1"></td>
+                        <td><input type="text" id="bcut1"></td>
+                        <td><input type="text" id="symiss1"></td>
+                    </tr>
+                    <tr bgcolor="#E0F2F7">
+                        <td>２番</td>
+                        <td><input type="text" id="asist2"></td>
+                        <td><input type="text" id="pcut2"></td>
+                        <td><input type="text" id="count2"></td>
+                        <td><input type="text" id="plcut2"></td>
+                        <td><input type="text" id="hup2"></td>
+                        <td><input type="text" id="psuc2"></td>
+                        <td><input type="text" id="pmiss2"></td>
+                        <td><input type="text" id="faul2"></td>
+                        <td><input type="text" id="pfaul2"></td>
+                        <td><input type="text" id="floot2"></td>
+                        <td><input type="text" id="flotmiss2"></td>
+                        <td><input type="text" id="cutin2"></td>
+                        <td><input type="text" id="bcut2"></td>
+                        <td><input type="text" id="symiss2"></td>
+                    </tr>
+                    <tr bgcolor="#E0F2F7">
+                        <td>３番</td>
+                        <td><input type="text" id="asist3"></td>
+                        <td><input type="text" id="pcut3"></td>
+                        <td><input type="text" id="count3"></td>
+                        <td><input type="text" id="plcut3"></td>
+                        <td><input type="text" id="hup3"></td>
+                        <td><input type="text" id="psuc3"></td>
+                        <td><input type="text" id="pmiss3"></td>
+                        <td><input type="text" id="faul3"></td>
+                        <td><input type="text" id="pfaul3"></td>
+                        <td><input type="text" id="floot3"></td>
+                        <td><input type="text" id="flotmiss3"></td>
+                        <td><input type="text" id="cutin3"></td>
+                        <td><input type="text" id="bcut3"></td>
+                        <td><input type="text" id="symiss3"></td>
+                    </tr>
+                    <tr bgcolor="#E0F2F7">
+                        <td>４番</td>
+                        <td><input type="text" id="asist4"></td>
+                        <td><input type="text" id="pcut4"></td>
+                        <td><input type="text" id="count4"></td>
+                        <td><input type="text" id="plcut4"></td>
+                        <td><input type="text" id="hup4"></td>
+                        <td><input type="text" id="psuc4"></td>
+                        <td><input type="text" id="pmiss4"></td>
+                        <td><input type="text" id="faul4"></td>
+                        <td><input type="text" id="pfaul4"></td>
+                        <td><input type="text" id="floot4"></td>
+                        <td><input type="text" id="flotmiss4"></td>
+                        <td><input type="text" id="cutin4"></td>
+                        <td><input type="text" id="bcut4"></td>
+                        <td><input type="text" id="symiss4"></td>
+                    </tr>
+                    <tr bgcolor="#E0F2F7">
+                        <td>５番</td>
+                        <td><input type="text" id="asist5"></td>
+                        <td><input type="text" id="pcut5"></td>
+                        <td><input type="text" id="count5"></td>
+                        <td><input type="text" id="plcut5"></td>
+                        <td><input type="text" id="hup5"></td>
+                        <td><input type="text" id="psuc5"></td>
+                        <td><input type="text" id="pmiss5"></td>
+                        <td><input type="text" id="faul5"></td>
+                        <td><input type="text" id="pfaul5"></td>
+                        <td><input type="text" id="floot5"></td>
+                        <td><input type="text" id="flotmiss5"></td>
+                        <td><input type="text" id="cutin5"></td>
+                        <td><input type="text" id="bcut5"></td>
+                        <td><input type="text" id="symiss5"></td>
+                    </tr>
+                    <tr bgcolor="#E0F2F7">
+                        <td>６番</td>
+                        <td><input type="text" id="asist6"></td>
+                        <td><input type="text" id="pcut6"></td>
+                        <td><input type="text" id="count6"></td>
+                        <td><input type="text" id="plcut6"></td>
+                        <td><input type="text" id="hup6"></td>
+                        <td><input type="text" id="psuc6"></td>
+                        <td><input type="text" id="pmiss6"></td>
+                        <td><input type="text" id="faul6"></td>
+                        <td><input type="text" id="pfaul6"></td>
+                        <td><input type="text" id="floot6"></td>
+                        <td><input type="text" id="flotmiss6"></td>
+                        <td><input type="text" id="cutin6"></td>
+                        <td><input type="text" id="bcut6"></td>
+                        <td><input type="text" id="symiss6"></td>
+                    </tr>
+                    <tr bgcolor="#E0F2F7">
+                        <td>７番</td>
+                        <td><input type="text" id="asist7"></td>
+                        <td><input type="text" id="pcut7"></td>
+                        <td><input type="text" id="count7"></td>
+                        <td><input type="text" id="plcut7"></td>
+                        <td><input type="text" id="hup7"></td>
+                        <td><input type="text" id="psuc7"></td>
+                        <td><input type="text" id="pmiss7"></td>
+                        <td><input type="text" id="faul7"></td>
+                        <td><input type="text" id="pfaul7"></td>
+                        <td><input type="text" id="floot7"></td>
+                        <td><input type="text" id="flotmiss7"></td>
+                        <td><input type="text" id="cutin7"></td>
+                        <td><input type="text" id="bcut7"></td>
+                        <td><input type="text" id="symiss7"></td>
+                    </tr>
+                    <tr bgcolor="#E0F2F7">
+                        <td>８番</td>
+                        <td><input type="text" id="asist8"></td>
+                        <td><input type="text" id="pcut8"></td>
+                        <td><input type="text" id="count8"></td>
+                        <td><input type="text" id="plcut8"></td>
+                        <td><input type="text" id="hup8"></td>
+                        <td><input type="text" id="psuc8"></td>
+                        <td><input type="text" id="pmiss8"></td>
+                        <td><input type="text" id="faul8"></td>
+                        <td><input type="text" id="pfaul8"></td>
+                        <td><input type="text" id="floot8"></td>
+                        <td><input type="text" id="flotmiss8"></td>
+                        <td><input type="text" id="cutin8"></td>
+                        <td><input type="text" id="bcut8"></td>
+                        <td><input type="text" id="symiss8"></td>
+                    </tr>
+                    <tr bgcolor="#E0F2F7">
+                        <td>９番</td>
+                        <td><input type="text" id="asist9"></td>
+                        <td><input type="text" id="pcut9"></td>
+                        <td><input type="text" id="count9"></td>
+                        <td><input type="text" id="plcut9"></td>
+                        <td><input type="text" id="hup9"></td>
+                        <td><input type="text" id="psuc9"></td>
+                        <td><input type="text" id="pmiss9"></td>
+                        <td><input type="text" id="faul9"></td>
+                        <td><input type="text" id="pfaul9"></td>
+                        <td><input type="text" id="floot9"></td>
+                        <td><input type="text" id="flotmiss9"></td>
+                        <td><input type="text" id="cutin9"></td>
+                        <td><input type="text" id="bcut9"></td>
+                        <td><input type="text" id="symiss9"></td>
+                    </tr>
+                    <tr bgcolor="#E0F2F7">
+                        <td>１０番</td>
+                        <td><input type="text" id="asist10"></td>
+                        <td><input type="text" id="pcut10"></td>
+                        <td><input type="text" id="count10"></td>
+                        <td><input type="text" id="plcut10"></td>
+                        <td><input type="text" id="hup10"></td>
+                        <td><input type="text" id="psuc10"></td>
+                        <td><input type="text" id="pmiss10"></td>
+                        <td><input type="text" id="faul10"></td>
+                        <td><input type="text" id="pfaul10"></td>
+                        <td><input type="text" id="floot10"></td>
+                        <td><input type="text" id="flotmiss10"></td>
+                        <td><input type="text" id="cutin10"></td>
+                        <td><input type="text" id="bcut10"></td>
+                        <td><input type="text" id="symiss10"></td>
+                    </tr>
+                    <tr bgcolor="#E0F2F7">
+                        <td>１１番</td>
+                        <td><input type="text" id="asist11"></td>
+                        <td><input type="text" id="pcut11"></td>
+                        <td><input type="text" id="count11"></td>
+                        <td><input type="text" id="plcut11"></td>
+                        <td><input type="text" id="hup11"></td>
+                        <td><input type="text" id="psuc11"></td>
+                        <td><input type="text" id="pmiss11"></td>
+                        <td><input type="text" id="faul11"></td>
+                        <td><input type="text" id="pfaul11"></td>
+                        <td><input type="text" id="floot11"></td>
+                        <td><input type="text" id="flotmiss11"></td>
+                        <td><input type="text" id="cutin11"></td>
+                        <td><input type="text" id="bcut11"></td>
+                        <td><input type="text" id="symiss11"></td>
+                    </tr>
+                    <tr bgcolor="#E0F2F7">
+                        <td>１２番</td>
+                        <td><input type="text" id="asist12"></td>
+                        <td><input type="text" id="pcut12"></td>
+                        <td><input type="text" id="count12"></td>
+                        <td><input type="text" id="plcut12"></td>
+                        <td><input type="text" id="hup12"></td>
+                        <td><input type="text" id="psuc12"></td>
+                        <td><input type="text" id="pmiss12"></td>
+                        <td><input type="text" id="faul12"></td>
+                        <td><input type="text" id="pfaul12"></td>
+                        <td><input type="text" id="floot12"></td>
+                        <td><input type="text" id="flotmiss12"></td>
+                        <td><input type="text" id="cutin12"></td>
+                        <td><input type="text" id="bcut12"></td>
+                        <td><input type="text" id="symiss12"></td>
+                    </tr>
+                    <tr bgcolor="#E0F2F7">
+                        <td>１３番</td>
+                        <td><input type="text" id="asist13"></td>
+                        <td><input type="text" id="pcut13"></td>
+                        <td><input type="text" id="count13"></td>
+                        <td><input type="text" id="plcut13"></td>
+                        <td><input type="text" id="hup13"></td>
+                        <td><input type="text" id="psuc13"></td>
+                        <td><input type="text" id="pmiss13"></td>
+                        <td><input type="text" id="faul13"></td>
+                        <td><input type="text" id="pfaul13"></td>
+                        <td><input type="text" id="floot13"></td>
+                        <td><input type="text" id="flotmiss13"></td>
+                        <td><input type="text" id="cutin13"></td>
+                        <td><input type="text" id="bcut13"></td>
+                        <td><input type="text" id="symiss13"></td>
+                    </tr>
+                </table>
+            </div>
         </div>
     </div>
 
