@@ -1,7 +1,9 @@
 //1番
 //A
 var tokyo = localStorage.getItem('tokutenA5-1');
-$('.tokyo').text(tokyo);
+if (tokyo !== null) {
+    $('.tokyo').text(tokyo);
+}
 var shinjyuku = localStorage.getItem('hazushiA5-1');
 $('.shinjyuku').text(shinjyuku);
 var ogikubo = localStorage.getItem('tokutenA4-1');
