@@ -5,9 +5,13 @@ if (tokyo !== null) {
     $('.tokyo').text(tokyo);
 }
 var shinjyuku = localStorage.getItem('hazushiA5-1');
-$('.shinjyuku').text(shinjyuku);
-var ogikubo = localStorage.getItem('tokutenA4-1');
-$('.ogikubo').text(ogikubo);
+if (shinjyuku !== null) {
+    $('.shinjyuku').text(shinjyuku);
+}
+var ogikubo = localStorage.getItem('tokutenA4-1')
+if (ogikubo !== null) {
+    $('.ogikubo').text(ogikubo);
+}
 var kunitachi = localStorage.getItem('hazushiA4-1');
 $('.kunitachi').text(kunitachi);
 var kitijyouji = localStorage.getItem('tokutenA3-1');

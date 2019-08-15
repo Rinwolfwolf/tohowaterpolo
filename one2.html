@@ -49,9 +49,8 @@
 
 
 
-
-    <div class="row">
-        <div class="four">
+    <div class="container">
+        <div class="row">
             <div class="col-xs-10 col-lg-10">
                 <table border="1" width="50%" height="30%" max-width="100%">
                     <tr class="header">
@@ -296,262 +295,261 @@
                 </table>
             </div>
         </div>
-    </div>
 
 
 
-    <div class="row">
+        <div class="row">
+            <div class="col-xs-4 col-lg-4">
+
+
+                <h2>競技能力指数表</h2>
+                <div class="row">
+                    <div class="col-xs-4"><input type="text" class="form-control" placeholder="対戦相手" id="versas"> </div>
+                </div>
+                <p>
+
+                    <button type="button" style="background:#CEF6CE" id="show">表の数値を表示する</button>
+                </p>
+                <div class="row">
+
+                    <table border="1">
+                        <tr class="header" bgcolor="#D8CEF6">
+                            <th></th>
+                            <th>プラス行為（回）</th>
+                            <th>マイナス行為（回）</th>
+                            <th>合計（貢献度）</th>
+                        </tr>
+                        <tr bgcolor="white">
+                            <td>1番</td>
+                            <td><input type="text" placeholder="" id="plus1"></td>
+                            <td><input type="text" placeholder="" id="minas1"></td>
+                            <td><input type="text" placeholder="" id="every1"></td>
+                        </tr>
+                        <tr bgcolor="white">
+                            <td>2番</td>
+                            <td><input type="text" placeholder="" id="plus2"></td>
+                            <td><input type="text" placeholder="" id="minas2"></td>
+                            <td><input type="text" placeholder="" id="every2"></td>
+                        </tr>
+                        <tr bgcolor="white">
+                            <td>3番</td>
+                            <td><input type="text" placeholder="" id="plus3"></td>
+                            <td><input type="text" placeholder="" id="minas3"></td>
+                            <td><input type="text" placeholder="" id="every3"></td>
+                        </tr>
+                        <tr bgcolor="white">
+                            <td>4番</td>
+                            <td><input type="text" placeholder="" id="plus4"></td>
+                            <td><input type="text" placeholder="" id="minas4"></td>
+                            <td><input type="text" placeholder="" id="every4"></td>
+                        </tr>
+                        <tr bgcolor="white">
+                            <td>5番</td>
+                            <td><input type="text" placeholder="" id="plus5"></td>
+                            <td><input type="text" placeholder="" id="minas5"></td>
+                            <td><input type="text" placeholder="" id="every5"></td>
+                        </tr>
+                        <tr bgcolor="white">
+                            <td>6番</td>
+                            <td><input type="text" placeholder="" id="plus6"></td>
+                            <td><input type="text" placeholder="" id="minas6"></td>
+                            <td><input type="text" placeholder="" id="every6"></td>
+                        </tr>
+                        <tr bgcolor="white">
+                            <td>7番</td>
+                            <td><input type="text" placeholder="" id="plus7"></td>
+                            <td><input type="text" placeholder="" id="minas7"></td>
+                            <td><input type="text" placeholder="" id="every7"></td>
+                        </tr>
+                        <tr bgcolor="white">
+                            <td>8番</td>
+                            <td><input type="text" placeholder="" id="plus8"></td>
+                            <td><input type="text" placeholder="" id="minas8"></td>
+                            <td><input type="text" placeholder="" id="every8"></td>
+                        </tr>
+                        <tr bgcolor="white">
+                            <td>9番</td>
+                            <td><input type="text" placeholder="" id="plus9"></td>
+                            <td><input type="text" placeholder="" id="minas9"></td>
+                            <td><input type="text" placeholder="" id="every9"></td>
+                        </tr>
+                        <tr bgcolor="white">
+                            <td>10番</td>
+                            <td><input type="text" placeholder="" id="plus10"></td>
+                            <td><input type="text" placeholder="" id="minas10"></td>
+                            <td><input type="text" placeholder="" id="every10"></td>
+                        </tr>
+                        <tr bgcolor="white">
+                            <td>11番</td>
+                            <td><input type="text" placeholder="" id="plus11"></td>
+                            <td><input type="text" placeholder="" id="minas11"></td>
+                            <td><input type="text" placeholder="" id="every11"></td>
+                        </tr>
+                        <tr bgcolor="white">
+                            <td>12番</td>
+                            <td><input type="text" placeholder="" id="plus12"></td>
+                            <td><input type="text" placeholder="" id="minas12"></td>
+                            <td><input type="text" placeholder="" id="every12"></td>
+                        </tr>
+                        <tr bgcolor="white">
+                            <td>13番</td>
+                            <td><input type="text" placeholder="" id="plus13"></td>
+                            <td><input type="text" placeholder="" id="minas13"></td>
+                            <td><input type="text" placeholder="" id="every13"></td>
+                        </tr>
+                        <tr bgcolor="white">
+                            <td>合計</td>
+                            <td><input type="text" placeholder="" id="all"></td>
+                            <td><input type="text" placeholder="" id="alll"></td>
+                            <td><input type="text" placeholder="" id="allll"></td>
+                        </tr>
+
+                    </table>
+                </div>
+            </div>
+        </div>
+
         <div class="col-xs-4 col-lg-4">
 
-
-            <h2>競技能力指数表</h2>
-            <div class="row">
-                <div class="col-xs-4"><input type="text" class="form-control" placeholder="対戦相手" id="versas"> </div>
-            </div>
+            <h2>シュート成功率</h2>
             <p>
 
-                <button type="button" style="background:#CEF6CE" id="show">表の数値を表示する</button>
+                <button type="button" style="background:#F5F6CE" id="fact">シュートの成功率を求める</button>
             </p>
-            <div class="row">
 
+            <div class="row">
                 <table border="1">
                     <tr class="header" bgcolor="#D8CEF6">
                         <th></th>
-                        <th>プラス行為（回）</th>
-                        <th>マイナス行為（回）</th>
-                        <th>合計（貢献度）</th>
+                        <th>確率</th>
                     </tr>
                     <tr bgcolor="white">
-                        <td>1番</td>
-                        <td><input type="text" placeholder="" id="plus1"></td>
-                        <td><input type="text" placeholder="" id="minas1"></td>
-                        <td><input type="text" placeholder="" id="every1"></td>
+                        <td>１番</td>
+                        <td><input type="text" placeholder="" id="shoot1">%</td>
                     </tr>
                     <tr bgcolor="white">
-                        <td>2番</td>
-                        <td><input type="text" placeholder="" id="plus2"></td>
-                        <td><input type="text" placeholder="" id="minas2"></td>
-                        <td><input type="text" placeholder="" id="every2"></td>
+                        <td>２番</td>
+                        <td><input type="text" placeholder="" id="shoot2">%</td>
                     </tr>
                     <tr bgcolor="white">
-                        <td>3番</td>
-                        <td><input type="text" placeholder="" id="plus3"></td>
-                        <td><input type="text" placeholder="" id="minas3"></td>
-                        <td><input type="text" placeholder="" id="every3"></td>
+                        <td>３番</td>
+                        <td><input type="text" placeholder="" id="shoot3">%</td>
                     </tr>
                     <tr bgcolor="white">
-                        <td>4番</td>
-                        <td><input type="text" placeholder="" id="plus4"></td>
-                        <td><input type="text" placeholder="" id="minas4"></td>
-                        <td><input type="text" placeholder="" id="every4"></td>
+                        <td>４番</td>
+                        <td><input type="text" placeholder="" id="shoot4">%</td>
                     </tr>
                     <tr bgcolor="white">
-                        <td>5番</td>
-                        <td><input type="text" placeholder="" id="plus5"></td>
-                        <td><input type="text" placeholder="" id="minas5"></td>
-                        <td><input type="text" placeholder="" id="every5"></td>
+                        <td>５番</td>
+                        <td><input type="text" placeholder="" id="shoot5">%</td>
                     </tr>
                     <tr bgcolor="white">
-                        <td>6番</td>
-                        <td><input type="text" placeholder="" id="plus6"></td>
-                        <td><input type="text" placeholder="" id="minas6"></td>
-                        <td><input type="text" placeholder="" id="every6"></td>
+                        <td>６番</td>
+                        <td><input type="text" placeholder="" id="shoot6">%</td>
                     </tr>
                     <tr bgcolor="white">
-                        <td>7番</td>
-                        <td><input type="text" placeholder="" id="plus7"></td>
-                        <td><input type="text" placeholder="" id="minas7"></td>
-                        <td><input type="text" placeholder="" id="every7"></td>
+                        <td>７番</td>
+                        <td><input type="text" placeholder="" id="shoot7">%</td>
                     </tr>
                     <tr bgcolor="white">
-                        <td>8番</td>
-                        <td><input type="text" placeholder="" id="plus8"></td>
-                        <td><input type="text" placeholder="" id="minas8"></td>
-                        <td><input type="text" placeholder="" id="every8"></td>
+                        <td>８番</td>
+                        <td><input type="text" placeholder="" id="shoot8">%</td>
                     </tr>
                     <tr bgcolor="white">
-                        <td>9番</td>
-                        <td><input type="text" placeholder="" id="plus9"></td>
-                        <td><input type="text" placeholder="" id="minas9"></td>
-                        <td><input type="text" placeholder="" id="every9"></td>
+                        <td>９番</td>
+                        <td><input type="text" placeholder="" id="shoot9">%</td>
                     </tr>
                     <tr bgcolor="white">
-                        <td>10番</td>
-                        <td><input type="text" placeholder="" id="plus10"></td>
-                        <td><input type="text" placeholder="" id="minas10"></td>
-                        <td><input type="text" placeholder="" id="every10"></td>
+                        <td>１０番</td>
+                        <td><input type="text" placeholder="" id="shoot10">%</td>
                     </tr>
                     <tr bgcolor="white">
-                        <td>11番</td>
-                        <td><input type="text" placeholder="" id="plus11"></td>
-                        <td><input type="text" placeholder="" id="minas11"></td>
-                        <td><input type="text" placeholder="" id="every11"></td>
+                        <td>１１番</td>
+                        <td><input type="text" placeholder="" id="shoot11">%</td>
                     </tr>
                     <tr bgcolor="white">
-                        <td>12番</td>
-                        <td><input type="text" placeholder="" id="plus12"></td>
-                        <td><input type="text" placeholder="" id="minas12"></td>
-                        <td><input type="text" placeholder="" id="every12"></td>
+                        <td>１２番</td>
+                        <td><input type="text" placeholder="" id="shoot12">%</td>
                     </tr>
                     <tr bgcolor="white">
-                        <td>13番</td>
-                        <td><input type="text" placeholder="" id="plus13"></td>
-                        <td><input type="text" placeholder="" id="minas13"></td>
-                        <td><input type="text" placeholder="" id="every13"></td>
+                        <td>１３番</td>
+                        <td><input type="text" placeholder="" id="shoot13">%</td>
                     </tr>
-                    <tr bgcolor="white">
-                        <td>合計</td>
-                        <td><input type="text" placeholder="" id="all"></td>
-                        <td><input type="text" placeholder="" id="alll"></td>
-                        <td><input type="text" placeholder="" id="allll"></td>
-                    </tr>
-
                 </table>
             </div>
         </div>
-    </div>
 
-    <div class="col-xs-4 col-lg-4">
 
-        <h2>シュート成功率</h2>
-        <p>
 
-            <button type="button" style="background:#F5F6CE" id="fact">シュートの成功率を求める</button>
-        </p>
 
-        <div class="row">
-            <table border="1">
-                <tr class="header" bgcolor="#D8CEF6">
-                    <th></th>
-                    <th>確率</th>
-                </tr>
-                <tr bgcolor="white">
-                    <td>１番</td>
-                    <td><input type="text" placeholder="" id="shoot1">%</td>
-                </tr>
-                <tr bgcolor="white">
-                    <td>２番</td>
-                    <td><input type="text" placeholder="" id="shoot2">%</td>
-                </tr>
-                <tr bgcolor="white">
-                    <td>３番</td>
-                    <td><input type="text" placeholder="" id="shoot3">%</td>
-                </tr>
-                <tr bgcolor="white">
-                    <td>４番</td>
-                    <td><input type="text" placeholder="" id="shoot4">%</td>
-                </tr>
-                <tr bgcolor="white">
-                    <td>５番</td>
-                    <td><input type="text" placeholder="" id="shoot5">%</td>
-                </tr>
-                <tr bgcolor="white">
-                    <td>６番</td>
-                    <td><input type="text" placeholder="" id="shoot6">%</td>
-                </tr>
-                <tr bgcolor="white">
-                    <td>７番</td>
-                    <td><input type="text" placeholder="" id="shoot7">%</td>
-                </tr>
-                <tr bgcolor="white">
-                    <td>８番</td>
-                    <td><input type="text" placeholder="" id="shoot8">%</td>
-                </tr>
-                <tr bgcolor="white">
-                    <td>９番</td>
-                    <td><input type="text" placeholder="" id="shoot9">%</td>
-                </tr>
-                <tr bgcolor="white">
-                    <td>１０番</td>
-                    <td><input type="text" placeholder="" id="shoot10">%</td>
-                </tr>
-                <tr bgcolor="white">
-                    <td>１１番</td>
-                    <td><input type="text" placeholder="" id="shoot11">%</td>
-                </tr>
-                <tr bgcolor="white">
-                    <td>１２番</td>
-                    <td><input type="text" placeholder="" id="shoot12">%</td>
-                </tr>
-                <tr bgcolor="white">
-                    <td>１３番</td>
-                    <td><input type="text" placeholder="" id="shoot13">%</td>
-                </tr>
-            </table>
+        <div class="col-xs-4 col-lg-4">
+            <h2>パスの成功率</h2>
+            <p>
+
+                <button type="button" style="background:#F5F6CE" id="know">パスの成功率を求める</button>
+            </p>
+
+            <div class="row">
+                <table border="1">
+                    <tr class="header" bgcolor="#D8CEF6">
+                        <th></th>
+                        <th>確率</th>
+                    </tr>
+                    <tr bgcolor="white">
+                        <td>１番</td>
+                        <td><input type="text" placeholder="" id="pass1">%</td>
+                    </tr>
+                    <tr bgcolor="white">
+                        <td>２番</td>
+                        <td><input type="text" placeholder="" id="pass2">%</td>
+                    </tr>
+                    <tr bgcolor="white">
+                        <td>３番</td>
+                        <td><input type="text" placeholder="" id="pass3">%</td>
+                    </tr>
+                    <tr bgcolor="white">
+                        <td>４番</td>
+                        <td><input type="text" placeholder="" id="pass4">%</td>
+                    </tr>
+                    <tr bgcolor="white">
+                        <td>５番</td>
+                        <td><input type="text" placeholder="" id="pass5">%</td>
+                    </tr>
+                    <tr bgcolor="white">
+                        <td>６番</td>
+                        <td><input type="text" placeholder="" id="pass6">%</td>
+                    </tr>
+                    <tr bgcolor="white">
+                        <td>７番</td>
+                        <td><input type="text" placeholder="" id="pass7">%</td>
+                    </tr>
+                    <tr bgcolor="white">
+                        <td>８番</td>
+                        <td><input type="text" placeholder="" id="pass8">%</td>
+                    </tr>
+                    <tr bgcolor="white">
+                        <td>９番</td>
+                        <td><input type="text" placeholder="" id="pass9">%</td>
+                    </tr>
+                    <tr bgcolor="white">
+                        <td>１０番</td>
+                        <td><input type="text" placeholder="" id="pass10">%</td>
+                    </tr>
+                    <tr bgcolor="white">
+                        <td>１１番</td>
+                        <td><input type="text" placeholder="" id="pass11">%</td>
+                    </tr>
+                    <tr bgcolor="white">
+                        <td>１２番</td>
+                        <td><input type="text" placeholder="" id="pass12">%</td>
+                    </tr>
+                    <tr bgcolor="white">
+                        <td>１３番</td>
+                        <td><input type="text" placeholder="" id="pass13">%</td>
+                    </tr>
+                </table>
+            </div>
         </div>
-    </div>
-
-
-
-
-    <div class="col-xs-4 col-lg-4">
-        <h2>パスの成功率</h2>
-        <p>
-
-            <button type="button" style="background:#F5F6CE" id="know">パスの成功率を求める</button>
-        </p>
-
-        <div class="row">
-            <table border="1">
-                <tr class="header" bgcolor="#D8CEF6">
-                    <th></th>
-                    <th>確率</th>
-                </tr>
-                <tr bgcolor="white">
-                    <td>１番</td>
-                    <td><input type="text" placeholder="" id="pass1">%</td>
-                </tr>
-                <tr bgcolor="white">
-                    <td>２番</td>
-                    <td><input type="text" placeholder="" id="pass2">%</td>
-                </tr>
-                <tr bgcolor="white">
-                    <td>３番</td>
-                    <td><input type="text" placeholder="" id="pass3">%</td>
-                </tr>
-                <tr bgcolor="white">
-                    <td>４番</td>
-                    <td><input type="text" placeholder="" id="pass4">%</td>
-                </tr>
-                <tr bgcolor="white">
-                    <td>５番</td>
-                    <td><input type="text" placeholder="" id="pass5">%</td>
-                </tr>
-                <tr bgcolor="white">
-                    <td>６番</td>
-                    <td><input type="text" placeholder="" id="pass6">%</td>
-                </tr>
-                <tr bgcolor="white">
-                    <td>７番</td>
-                    <td><input type="text" placeholder="" id="pass7">%</td>
-                </tr>
-                <tr bgcolor="white">
-                    <td>８番</td>
-                    <td><input type="text" placeholder="" id="pass8">%</td>
-                </tr>
-                <tr bgcolor="white">
-                    <td>９番</td>
-                    <td><input type="text" placeholder="" id="pass9">%</td>
-                </tr>
-                <tr bgcolor="white">
-                    <td>１０番</td>
-                    <td><input type="text" placeholder="" id="pass10">%</td>
-                </tr>
-                <tr bgcolor="white">
-                    <td>１１番</td>
-                    <td><input type="text" placeholder="" id="pass11">%</td>
-                </tr>
-                <tr bgcolor="white">
-                    <td>１２番</td>
-                    <td><input type="text" placeholder="" id="pass12">%</td>
-                </tr>
-                <tr bgcolor="white">
-                    <td>１３番</td>
-                    <td><input type="text" placeholder="" id="pass13">%</td>
-                </tr>
-            </table>
-        </div>
-    </div>
 
 
     </div>
