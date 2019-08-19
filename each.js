@@ -13,19 +13,33 @@ if (ogikubo !== null) {
     $('.ogikubo').text(ogikubo);
 }
 var kunitachi = localStorage.getItem('hazushiA4-1');
-$('.kunitachi').text(kunitachi);
+if (kunitachi !== null) {
+    $('.kunitachi').text(kunitachi);
+}
 var kitijyouji = localStorage.getItem('tokutenA3-1');
-$('.kitijyouji').text(kitijyouji);
+if (kitijyouji !== null) {
+    $('.kitijyouji').text(kitijyouji);
+}
 var sibuya = localStorage.getItem('hazushiA3-1');
-$('.sibuya').text(sibuya);
+if (sibuya !== null) {
+    $('.sibuya').text(sibuya);
+}
 var ome = localStorage.getItem('tokutenA2-1');
-$('.ome').text(ome);
+if (ome !== null) {
+    $('.ome').text(ome);
+}
 var ebisu = localStorage.getItem('hazushiA2-1');
-$('.ebisu').text(ebisu);
+if (ebisu !== null) {
+    $('.ebisu').text(ebisu);
+}
 var yaho = localStorage.getItem('tokutenA1-1');
-$('.yaho').text(yaho);
+if (yaho !== null) {
+    $('.yaho').text(yaho);
+}
 var meidaimae = localStorage.getItem('hazushiA1-1');
-$('.meidaimae').text(meidaimae);
+if (meidaimae !== null) {
+    $('.meidaimae').text(meidaimae);
+}
 //B
 var hokkaido = localStorage.getItem('tokutenB5-1');
 $('.hokkaido').text(hokkaido);
