@@ -112,7 +112,7 @@ if (nanngou !== null) {
 }
 var iwasaki = localStorage.getItem('hazushiC2-1');
 if (iwasaki !== null) {
-    $('.iwasaki').iwasaki(iwasaki);
+    $('.iwasaki').text(iwasaki);
 }
 var simokita = localStorage.getItem('tokutenC1-1');
 if (simokita !== null) {
