@@ -83,7 +83,7 @@ if (yubari !== null) {
 }
 //C
 var aomori = localStorage.getItem('tokutenC5-1');
-if (aomori !==null) {    
+if (aomori !== null) {
     $('.aomori').text(aomori);
 }
 var hatinohe = localStorage.getItem('hazushiC5-1');
