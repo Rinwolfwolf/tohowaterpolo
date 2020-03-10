@@ -1,19 +1,30 @@
 <!DOCTYPE>
+<html lang="ja">
 
 <head>
     <meta charset="UTF-8">
     <title>桐朋水泳部</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
-        crossorigin="anonymous">
-    <style>
-        body {
-            background: skyblue
-        }
-    </style>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <style>
         body {
             background: skyblue
+        }
+
+        .btn {
+            border: 1px solid yellow;
+            border-radius: 5px;
+            padding: 30px;
+            text-align: center;
+            color: white;
+            width: 350px
+        }
+
+        .font {
+            font-size: 20px;
+            color: white;
         }
     </style>
 
@@ -21,25 +32,33 @@
 
 <body>
     <h1>
-        <p class="message" style="background:#58ACFA">水球リアルタイム分析・スカウティング分析プログラム<br> 　　　　　SND式</p>
+        <div class="col-xs-1"></div>
+        <div class="col-xs-10">
+            <p class="message" style="background:#58ACFA"> 水球リアルタイム分析・スカウティング分析プログラム 　SND式</p>
+        </div>
+        <div class="col-xs-1"></div>
     </h1>
-    <h2></h2>
-    <div class="col-xs-2"></div>
-    <div class="col-xs-7">
-        <input type="text" class="form-control" placeholder="大会名"></div>
+    <h2>
+        <div class="row">
+            <div class="col-xs-3"></div>
+            <div class="col-xs-6">
+                <input type="text" class="form-control" placeholder="大会名"></div>
+            <div class="col-xs-3"></div>
+        </div>
 
 
 
-
-    <h2></h2>
-    <div class="col-xs-6">
-        <input type="text" class="form-control" placeholder="開催日"></div>
-    <div class="col-xs-6">
-        <input type="text" class="form-control" placeholder="対戦チーム名"></div>
-
-
-
-
+        <div class="row"><br></div>
+        <div class="row">
+            <div class="col-xs-2"></div>
+            <div class="col-xs-3">
+                <input type="text" class="form-control" placeholder="開催日"></div>
+            <div class="col-xs-2"></div>
+            <div class="col-xs-3">
+                <input type="text" class="form-control" placeholder="対戦チーム名"></div>
+            <div class="col-xs-2"></div>
+        </div>
+    </h2>
 
 
 
@@ -48,6 +67,7 @@
     <div class="col-xs-5">
         <div class="row">
             <div class="col-xs-12">
+                <br>
                 <table border="1">
 
                     <tr bgcolor="#6699FF">
@@ -153,6 +173,7 @@
     <div class="col-xs-5">
         <div class="row">
             <div class="col-xs-12">
+                <br>
                 <table border="1">
 
                     <tr bgcolor="#6699FF">
@@ -254,28 +275,52 @@
             </div>
         </div>
     </div>
+    <div class="row"></div>
 
 
     <h4>
-        <div class="col-xs-2">
+        <div class="row">
+            <div class="col-xs-2">
+            </div>
+            <div class="col-xs-3">
+                <br>
+                <button type="button" style="background:#96D865" class="btn"><a href="new.html">
+                        <div class="font">シュートポジショニング分析<br>　入力画面</div>
+                    </a></button>
+            </div>
+            <div class="col-xs-1">
+            </div>
+            <div class="col-xs-3">
+                <br>
+                <button type="button" style="background:#96D865" class="btn"><a href="one2.html">
+                        <div class="font">競技能力指数計算プログラム<br>　入力画面</div>
+                    </a>
+                </button>
+            </div>
+            <div class="col-xs-3">
+            </div>
         </div>
-        <div class="col-xs-3">
-            <button type="button" style="background:#96D865"><a href="new.html">リアルタイム分析プログラムのページへ</a></button>
+        <div class="row"><br></div>
+        <div class="row"><br></div>
+        <div class="row"><br></div>
+        <div class="row"><br></div>
+
+        <div class="row">
+            <br>
+            <div class="col-xs-2"> </div>
+            <div class="col-xs-3">
+
+                <button type="button" style="background:rgb(214, 216, 101)" class="btn"><a href="personal.html">
+                        <div class="font">全体出力画面へ</div>
+                    </a></button>
+            </div>
+            <div class="col-xs-1"></div>
+            <div class="col-xs-3">
+                <button type="button" style="background:rgb(203, 101, 216)" class="btn"><a href="">
+                        <div class="font">保存する</div>
+                    </a></button>
+            </div>
         </div>
-        <div class="col-xs-1"></div>
-        <div class="col-xs-4">
-            <button type="button" style="background:#D89D65"><a href="grafe.html">スカウティング分析プログラムのページヘ(シュートフォーム)</a></button>
-        </div>
-        <br><br>
-        <div class="col-xs-6">
-        </div>
-        <div class="col-xs-4">
-            <button type="button" style="background:#D89D65"><a href="grafe2.html">スカウティング分析プログラムのページヘ(オフェンスとディフェンス)</a></button>
-        </div>
-        <div class="col-xs-6">
-        </div>
-        <div class="col-xs-4">
-            <button type="button" style="background:#D89D65"><a href="one2.html">スカウティング分析プログラムのページへ(競技能力指数及び計算用プログラム)</a></button>
         </div>
     </h4>
 </body>
