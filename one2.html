@@ -4,33 +4,56 @@
 <head>
     <meta charset="UTF-8">
     <title>桐朋水泳部 計算</title>
-
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
-        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
     <!-- Optional theme -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
-        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
+        integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 
     <style>
         body {
             background: skyblue
         }
 
-        .one {
-            width: 30%;
+        .font {
+            font-size: 40px;
+            color: black;
+            text-align: leftS;
         }
 
-        .two {
-            width: 30%;
+        .fonnt {
+            color: rgb(0, 4, 255);
+            text-align: center;
+            font-size: 20px;
         }
 
-        .three {
-            width: 30%;
+        .btn {
+            display: inline-block;
+            text-decoration: none;
+            font-weight: bold;
+            border: 1px solid yellow;
+            border-radius: 5px;
+            padding: 15px;
+            text-align: center;
+            width: 150px
         }
 
-        .four {
-            max-width: 100%;
+        .btn:hover {
+            background-color: #fff;
+            border-color: #59b1eb;
+            color: #59b1eb;
+        }
+
+        .btn:active {
+            transform: translateY(4px);
+            border-bottom: none;
+        }
+
+        .moji {
+            font-size: 30px;
+            color: white;
+            margin: 10px;
         }
     </style>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
@@ -38,521 +61,123 @@
 </head>
 
 <body>
-    <div class="row">
-        <div class="col-xs-5"><input type="text" class="form-control" placeholder="対戦相手" id="versas"> </div>
-    </div>
+    <h1>
 
-
-    <div class="table">
-        <h2 class="table-title">競技能力指数を計算する</h2>
-    </div>
-
-
-
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-10 col-lg-10">
-                <table border="1" width="50%" height="30%" max-width="100%">
-                    <tr class="header">
-                        <th bgcolor="#E0F2F7">番号</th>
-                        <th bgcolor="#E0F2F7">退水誘発</th>
-                        <th bgcolor="#E0F2F7">パスカット</th>
-                        <th bgcolor="#E0F2F7">バックカット</th>
-                        <th bgcolor="#E0F2F7">プレスカット</th>
-                        <th bgcolor="#E0F2F7">ハンドアップ</th>
-                        <th bgcolor="#E0F2F7">パス成功</th>
-                        <th bgcolor="#E0F2F7">パスミス</th>
-                        <th bgcolor="#E0F2F7">ミス</th>
-                        <th bgcolor="#E0F2F7">退水</th>
-                        <th bgcolor="#E0F2F7">フローティング</th>
-                        <th bgcolor="#E0F2F7">オフサイド</th>
-                        <th bgcolor="#E0F2F7">カットイン</th>
-                        <th bgcolor="#E0F2F7">シュート成功</th>
-                        <th bgcolor="#E0F2F7">シュートミス</th>
-
-                    </tr>
-                    <tr bgcolor="#E0F2F7">
-                        <td>１番</td>
-                        <td><input type="text" id="asist1"></td>
-                        <td><input type="text" id="pcut1"></td>
-                        <td><input type="text" id="count1"></td>
-                        <td><input type="text" id="plcut1"></td>
-                        <td><input type="text" id="hup1"></td>
-                        <td><input type="text" id="psuc1"></td>
-                        <td><input type="text" id="pmiss1"></td>
-                        <td><input type="text" id="faul1"></td>
-                        <td><input type="text" id="pfaul1"></td>
-                        <td><input type="text" id="floot1"></td>
-                        <td><input type="text" id="flotmiss1"></td>
-                        <td><input type="text" id="cutin1"></td>
-                        <td><input type="text" id="bcut1"></td>
-                        <td><input type="text" id="symiss1"></td>
-                    </tr>
-                    <tr bgcolor="#E0F2F7">
-                        <td>２番</td>
-                        <td><input type="text" id="asist2"></td>
-                        <td><input type="text" id="pcut2"></td>
-                        <td><input type="text" id="count2"></td>
-                        <td><input type="text" id="plcut2"></td>
-                        <td><input type="text" id="hup2"></td>
-                        <td><input type="text" id="psuc2"></td>
-                        <td><input type="text" id="pmiss2"></td>
-                        <td><input type="text" id="faul2"></td>
-                        <td><input type="text" id="pfaul2"></td>
-                        <td><input type="text" id="floot2"></td>
-                        <td><input type="text" id="flotmiss2"></td>
-                        <td><input type="text" id="cutin2"></td>
-                        <td><input type="text" id="bcut2"></td>
-                        <td><input type="text" id="symiss2"></td>
-                    </tr>
-                    <tr bgcolor="#E0F2F7">
-                        <td>３番</td>
-                        <td><input type="text" id="asist3"></td>
-                        <td><input type="text" id="pcut3"></td>
-                        <td><input type="text" id="count3"></td>
-                        <td><input type="text" id="plcut3"></td>
-                        <td><input type="text" id="hup3"></td>
-                        <td><input type="text" id="psuc3"></td>
-                        <td><input type="text" id="pmiss3"></td>
-                        <td><input type="text" id="faul3"></td>
-                        <td><input type="text" id="pfaul3"></td>
-                        <td><input type="text" id="floot3"></td>
-                        <td><input type="text" id="flotmiss3"></td>
-                        <td><input type="text" id="cutin3"></td>
-                        <td><input type="text" id="bcut3"></td>
-                        <td><input type="text" id="symiss3"></td>
-                    </tr>
-                    <tr bgcolor="#E0F2F7">
-                        <td>４番</td>
-                        <td><input type="text" id="asist4"></td>
-                        <td><input type="text" id="pcut4"></td>
-                        <td><input type="text" id="count4"></td>
-                        <td><input type="text" id="plcut4"></td>
-                        <td><input type="text" id="hup4"></td>
-                        <td><input type="text" id="psuc4"></td>
-                        <td><input type="text" id="pmiss4"></td>
-                        <td><input type="text" id="faul4"></td>
-                        <td><input type="text" id="pfaul4"></td>
-                        <td><input type="text" id="floot4"></td>
-                        <td><input type="text" id="flotmiss4"></td>
-                        <td><input type="text" id="cutin4"></td>
-                        <td><input type="text" id="bcut4"></td>
-                        <td><input type="text" id="symiss4"></td>
-                    </tr>
-                    <tr bgcolor="#E0F2F7">
-                        <td>５番</td>
-                        <td><input type="text" id="asist5"></td>
-                        <td><input type="text" id="pcut5"></td>
-                        <td><input type="text" id="count5"></td>
-                        <td><input type="text" id="plcut5"></td>
-                        <td><input type="text" id="hup5"></td>
-                        <td><input type="text" id="psuc5"></td>
-                        <td><input type="text" id="pmiss5"></td>
-                        <td><input type="text" id="faul5"></td>
-                        <td><input type="text" id="pfaul5"></td>
-                        <td><input type="text" id="floot5"></td>
-                        <td><input type="text" id="flotmiss5"></td>
-                        <td><input type="text" id="cutin5"></td>
-                        <td><input type="text" id="bcut5"></td>
-                        <td><input type="text" id="symiss5"></td>
-                    </tr>
-                    <tr bgcolor="#E0F2F7">
-                        <td>６番</td>
-                        <td><input type="text" id="asist6"></td>
-                        <td><input type="text" id="pcut6"></td>
-                        <td><input type="text" id="count6"></td>
-                        <td><input type="text" id="plcut6"></td>
-                        <td><input type="text" id="hup6"></td>
-                        <td><input type="text" id="psuc6"></td>
-                        <td><input type="text" id="pmiss6"></td>
-                        <td><input type="text" id="faul6"></td>
-                        <td><input type="text" id="pfaul6"></td>
-                        <td><input type="text" id="floot6"></td>
-                        <td><input type="text" id="flotmiss6"></td>
-                        <td><input type="text" id="cutin6"></td>
-                        <td><input type="text" id="bcut6"></td>
-                        <td><input type="text" id="symiss6"></td>
-                    </tr>
-                    <tr bgcolor="#E0F2F7">
-                        <td>７番</td>
-                        <td><input type="text" id="asist7"></td>
-                        <td><input type="text" id="pcut7"></td>
-                        <td><input type="text" id="count7"></td>
-                        <td><input type="text" id="plcut7"></td>
-                        <td><input type="text" id="hup7"></td>
-                        <td><input type="text" id="psuc7"></td>
-                        <td><input type="text" id="pmiss7"></td>
-                        <td><input type="text" id="faul7"></td>
-                        <td><input type="text" id="pfaul7"></td>
-                        <td><input type="text" id="floot7"></td>
-                        <td><input type="text" id="flotmiss7"></td>
-                        <td><input type="text" id="cutin7"></td>
-                        <td><input type="text" id="bcut7"></td>
-                        <td><input type="text" id="symiss7"></td>
-                    </tr>
-                    <tr bgcolor="#E0F2F7">
-                        <td>８番</td>
-                        <td><input type="text" id="asist8"></td>
-                        <td><input type="text" id="pcut8"></td>
-                        <td><input type="text" id="count8"></td>
-                        <td><input type="text" id="plcut8"></td>
-                        <td><input type="text" id="hup8"></td>
-                        <td><input type="text" id="psuc8"></td>
-                        <td><input type="text" id="pmiss8"></td>
-                        <td><input type="text" id="faul8"></td>
-                        <td><input type="text" id="pfaul8"></td>
-                        <td><input type="text" id="floot8"></td>
-                        <td><input type="text" id="flotmiss8"></td>
-                        <td><input type="text" id="cutin8"></td>
-                        <td><input type="text" id="bcut8"></td>
-                        <td><input type="text" id="symiss8"></td>
-                    </tr>
-                    <tr bgcolor="#E0F2F7">
-                        <td>９番</td>
-                        <td><input type="text" id="asist9"></td>
-                        <td><input type="text" id="pcut9"></td>
-                        <td><input type="text" id="count9"></td>
-                        <td><input type="text" id="plcut9"></td>
-                        <td><input type="text" id="hup9"></td>
-                        <td><input type="text" id="psuc9"></td>
-                        <td><input type="text" id="pmiss9"></td>
-                        <td><input type="text" id="faul9"></td>
-                        <td><input type="text" id="pfaul9"></td>
-                        <td><input type="text" id="floot9"></td>
-                        <td><input type="text" id="flotmiss9"></td>
-                        <td><input type="text" id="cutin9"></td>
-                        <td><input type="text" id="bcut9"></td>
-                        <td><input type="text" id="symiss9"></td>
-                    </tr>
-                    <tr bgcolor="#E0F2F7">
-                        <td>１０番</td>
-                        <td><input type="text" id="asist10"></td>
-                        <td><input type="text" id="pcut10"></td>
-                        <td><input type="text" id="count10"></td>
-                        <td><input type="text" id="plcut10"></td>
-                        <td><input type="text" id="hup10"></td>
-                        <td><input type="text" id="psuc10"></td>
-                        <td><input type="text" id="pmiss10"></td>
-                        <td><input type="text" id="faul10"></td>
-                        <td><input type="text" id="pfaul10"></td>
-                        <td><input type="text" id="floot10"></td>
-                        <td><input type="text" id="flotmiss10"></td>
-                        <td><input type="text" id="cutin10"></td>
-                        <td><input type="text" id="bcut10"></td>
-                        <td><input type="text" id="symiss10"></td>
-                    </tr>
-                    <tr bgcolor="#E0F2F7">
-                        <td>１１番</td>
-                        <td><input type="text" id="asist11"></td>
-                        <td><input type="text" id="pcut11"></td>
-                        <td><input type="text" id="count11"></td>
-                        <td><input type="text" id="plcut11"></td>
-                        <td><input type="text" id="hup11"></td>
-                        <td><input type="text" id="psuc11"></td>
-                        <td><input type="text" id="pmiss11"></td>
-                        <td><input type="text" id="faul11"></td>
-                        <td><input type="text" id="pfaul11"></td>
-                        <td><input type="text" id="floot11"></td>
-                        <td><input type="text" id="flotmiss11"></td>
-                        <td><input type="text" id="cutin11"></td>
-                        <td><input type="text" id="bcut11"></td>
-                        <td><input type="text" id="symiss11"></td>
-                    </tr>
-                    <tr bgcolor="#E0F2F7">
-                        <td>１２番</td>
-                        <td><input type="text" id="asist12"></td>
-                        <td><input type="text" id="pcut12"></td>
-                        <td><input type="text" id="count12"></td>
-                        <td><input type="text" id="plcut12"></td>
-                        <td><input type="text" id="hup12"></td>
-                        <td><input type="text" id="psuc12"></td>
-                        <td><input type="text" id="pmiss12"></td>
-                        <td><input type="text" id="faul12"></td>
-                        <td><input type="text" id="pfaul12"></td>
-                        <td><input type="text" id="floot12"></td>
-                        <td><input type="text" id="flotmiss12"></td>
-                        <td><input type="text" id="cutin12"></td>
-                        <td><input type="text" id="bcut12"></td>
-                        <td><input type="text" id="symiss12"></td>
-                    </tr>
-                    <tr bgcolor="#E0F2F7">
-                        <td>１３番</td>
-                        <td><input type="text" id="asist13"></td>
-                        <td><input type="text" id="pcut13"></td>
-                        <td><input type="text" id="count13"></td>
-                        <td><input type="text" id="plcut13"></td>
-                        <td><input type="text" id="hup13"></td>
-                        <td><input type="text" id="psuc13"></td>
-                        <td><input type="text" id="pmiss13"></td>
-                        <td><input type="text" id="faul13"></td>
-                        <td><input type="text" id="pfaul13"></td>
-                        <td><input type="text" id="floot13"></td>
-                        <td><input type="text" id="flotmiss13"></td>
-                        <td><input type="text" id="cutin13"></td>
-                        <td><input type="text" id="bcut13"></td>
-                        <td><input type="text" id="symiss13"></td>
-                    </tr>
-                </table>
-            </div>
+        <div class="font">
+            貢献度入力画面 <span class="fonnt">～選手の番号を押した後、その選手のプレーをタッチしてください～</span>
         </div>
 
 
+    </h1>
 
-        <div class="row">
-            <div class="col-xs-4 col-lg-4">
-
-
-                <h2>競技能力指数表</h2>
-                <div class="row">
-                    <div class="col-xs-4"><input type="text" class="form-control" placeholder="対戦相手" id="versas"> </div>
+    <h3>
+        <div style="text-align: center;">
+            <button type="button" style="background:rgb(0, 102, 255)" class="btn">
+                <div class="moji">
+                    １番
                 </div>
-                <p>
+            </button>
 
-                    <button type="button" style="background:#CEF6CE" id="show">表の数値を表示する</button>
-                </p>
-                <div class="row">
 
-                    <table border="1">
-                        <tr class="header" bgcolor="#D8CEF6">
-                            <th></th>
-                            <th>プラス行為（回）</th>
-                            <th>マイナス行為（回）</th>
-                            <th>合計（貢献度）</th>
-                        </tr>
-                        <tr bgcolor="white">
-                            <td>1番</td>
-                            <td><input type="text" placeholder="" id="plus1"></td>
-                            <td><input type="text" placeholder="" id="minas1"></td>
-                            <td><input type="text" placeholder="" id="every1"></td>
-                        </tr>
-                        <tr bgcolor="white">
-                            <td>2番</td>
-                            <td><input type="text" placeholder="" id="plus2"></td>
-                            <td><input type="text" placeholder="" id="minas2"></td>
-                            <td><input type="text" placeholder="" id="every2"></td>
-                        </tr>
-                        <tr bgcolor="white">
-                            <td>3番</td>
-                            <td><input type="text" placeholder="" id="plus3"></td>
-                            <td><input type="text" placeholder="" id="minas3"></td>
-                            <td><input type="text" placeholder="" id="every3"></td>
-                        </tr>
-                        <tr bgcolor="white">
-                            <td>4番</td>
-                            <td><input type="text" placeholder="" id="plus4"></td>
-                            <td><input type="text" placeholder="" id="minas4"></td>
-                            <td><input type="text" placeholder="" id="every4"></td>
-                        </tr>
-                        <tr bgcolor="white">
-                            <td>5番</td>
-                            <td><input type="text" placeholder="" id="plus5"></td>
-                            <td><input type="text" placeholder="" id="minas5"></td>
-                            <td><input type="text" placeholder="" id="every5"></td>
-                        </tr>
-                        <tr bgcolor="white">
-                            <td>6番</td>
-                            <td><input type="text" placeholder="" id="plus6"></td>
-                            <td><input type="text" placeholder="" id="minas6"></td>
-                            <td><input type="text" placeholder="" id="every6"></td>
-                        </tr>
-                        <tr bgcolor="white">
-                            <td>7番</td>
-                            <td><input type="text" placeholder="" id="plus7"></td>
-                            <td><input type="text" placeholder="" id="minas7"></td>
-                            <td><input type="text" placeholder="" id="every7"></td>
-                        </tr>
-                        <tr bgcolor="white">
-                            <td>8番</td>
-                            <td><input type="text" placeholder="" id="plus8"></td>
-                            <td><input type="text" placeholder="" id="minas8"></td>
-                            <td><input type="text" placeholder="" id="every8"></td>
-                        </tr>
-                        <tr bgcolor="white">
-                            <td>9番</td>
-                            <td><input type="text" placeholder="" id="plus9"></td>
-                            <td><input type="text" placeholder="" id="minas9"></td>
-                            <td><input type="text" placeholder="" id="every9"></td>
-                        </tr>
-                        <tr bgcolor="white">
-                            <td>10番</td>
-                            <td><input type="text" placeholder="" id="plus10"></td>
-                            <td><input type="text" placeholder="" id="minas10"></td>
-                            <td><input type="text" placeholder="" id="every10"></td>
-                        </tr>
-                        <tr bgcolor="white">
-                            <td>11番</td>
-                            <td><input type="text" placeholder="" id="plus11"></td>
-                            <td><input type="text" placeholder="" id="minas11"></td>
-                            <td><input type="text" placeholder="" id="every11"></td>
-                        </tr>
-                        <tr bgcolor="white">
-                            <td>12番</td>
-                            <td><input type="text" placeholder="" id="plus12"></td>
-                            <td><input type="text" placeholder="" id="minas12"></td>
-                            <td><input type="text" placeholder="" id="every12"></td>
-                        </tr>
-                        <tr bgcolor="white">
-                            <td>13番</td>
-                            <td><input type="text" placeholder="" id="plus13"></td>
-                            <td><input type="text" placeholder="" id="minas13"></td>
-                            <td><input type="text" placeholder="" id="every13"></td>
-                        </tr>
-                        <tr bgcolor="white">
-                            <td>合計</td>
-                            <td><input type="text" placeholder="" id="all"></td>
-                            <td><input type="text" placeholder="" id="alll"></td>
-                            <td><input type="text" placeholder="" id="allll"></td>
-                        </tr>
 
-                    </table>
+
+            <button type="button" style="background:rgb(0, 102, 255)" class=" btn">
+                <div class="moji">
+                    ２番
                 </div>
-            </div>
+            </button>
+
+
+            <button type="button" style="background:rgb(0, 102, 255)" class=" btn">
+                <div class="moji">
+                    ３番
+                </div>
+            </button>
+
+
+            <button type="button" style="background:rgb(0, 102, 255)" class=" btn">
+                <div class="moji">
+                    ４番
+                </div>
+            </button>
+
+
+            <button type="button" style="background:rgb(0, 102, 255)" class=" btn">
+                <div class="moji">
+                    ５番
+                </div>
+            </button>
         </div>
+        <div class="row"><br></div>
 
-        <div class="col-xs-4 col-lg-4">
+        <div style="text-align: center;">
+            <button type="button" style="background:rgb(0, 102, 255)" class=" btn">
+                <div class="moji">
+                    ６番
+                </div>
+            </button>
 
-            <h2>シュート成功率</h2>
-            <p>
 
-                <button type="button" style="background:#F5F6CE" id="fact">シュートの成功率を求める</button>
-            </p>
 
-            <div class="row">
-                <table border="1">
-                    <tr class="header" bgcolor="#D8CEF6">
-                        <th></th>
-                        <th>確率</th>
-                    </tr>
-                    <tr bgcolor="white">
-                        <td>１番</td>
-                        <td><input type="text" placeholder="" id="shoot1">%</td>
-                    </tr>
-                    <tr bgcolor="white">
-                        <td>２番</td>
-                        <td><input type="text" placeholder="" id="shoot2">%</td>
-                    </tr>
-                    <tr bgcolor="white">
-                        <td>３番</td>
-                        <td><input type="text" placeholder="" id="shoot3">%</td>
-                    </tr>
-                    <tr bgcolor="white">
-                        <td>４番</td>
-                        <td><input type="text" placeholder="" id="shoot4">%</td>
-                    </tr>
-                    <tr bgcolor="white">
-                        <td>５番</td>
-                        <td><input type="text" placeholder="" id="shoot5">%</td>
-                    </tr>
-                    <tr bgcolor="white">
-                        <td>６番</td>
-                        <td><input type="text" placeholder="" id="shoot6">%</td>
-                    </tr>
-                    <tr bgcolor="white">
-                        <td>７番</td>
-                        <td><input type="text" placeholder="" id="shoot7">%</td>
-                    </tr>
-                    <tr bgcolor="white">
-                        <td>８番</td>
-                        <td><input type="text" placeholder="" id="shoot8">%</td>
-                    </tr>
-                    <tr bgcolor="white">
-                        <td>９番</td>
-                        <td><input type="text" placeholder="" id="shoot9">%</td>
-                    </tr>
-                    <tr bgcolor="white">
-                        <td>１０番</td>
-                        <td><input type="text" placeholder="" id="shoot10">%</td>
-                    </tr>
-                    <tr bgcolor="white">
-                        <td>１１番</td>
-                        <td><input type="text" placeholder="" id="shoot11">%</td>
-                    </tr>
-                    <tr bgcolor="white">
-                        <td>１２番</td>
-                        <td><input type="text" placeholder="" id="shoot12">%</td>
-                    </tr>
-                    <tr bgcolor="white">
-                        <td>１３番</td>
-                        <td><input type="text" placeholder="" id="shoot13">%</td>
-                    </tr>
-                </table>
-            </div>
+
+            <button type="button" style="background:rgb(0, 102, 255)" class="btn">
+                <div class="moji">
+                    7番
+                </div>
+            </button>
+
+
+
+
+            <button type="button" style="background:rgb(0, 102, 255)" class=" btn">
+                <div class="moji">
+                    8番
+                </div>
+            </button>
+
+
+            <button type="button" style="background:rgb(0, 102, 255)" class=" btn">
+                <div class="moji">
+                    9番
+                </div>
+            </button>
+
+
+            <button type="button" style="background:rgb(0, 102, 255)" class=" btn">
+                <div class="moji">
+                    10番
+                </div>
+            </button>
         </div>
+        <div class="row"><br></div>
+
+        <div style="text-align: center;">
+            <button type="button" style="background:rgb(0, 102, 255)" class=" btn">
+                <div class="moji">
+                    11番
+                </div>
+            </button>
+
+
+            <button type="button" style="background:rgb(0, 102, 255)" class=" btn">
+                <div class="moji">
+                    12番
+                </div>
+            </button>
 
 
 
-
-        <div class="col-xs-4 col-lg-4">
-            <h2>パスの成功率</h2>
-            <p>
-
-                <button type="button" style="background:#F5F6CE" id="know">パスの成功率を求める</button>
-            </p>
-
-            <div class="row">
-                <table border="1">
-                    <tr class="header" bgcolor="#D8CEF6">
-                        <th></th>
-                        <th>確率</th>
-                    </tr>
-                    <tr bgcolor="white">
-                        <td>１番</td>
-                        <td><input type="text" placeholder="" id="pass1">%</td>
-                    </tr>
-                    <tr bgcolor="white">
-                        <td>２番</td>
-                        <td><input type="text" placeholder="" id="pass2">%</td>
-                    </tr>
-                    <tr bgcolor="white">
-                        <td>３番</td>
-                        <td><input type="text" placeholder="" id="pass3">%</td>
-                    </tr>
-                    <tr bgcolor="white">
-                        <td>４番</td>
-                        <td><input type="text" placeholder="" id="pass4">%</td>
-                    </tr>
-                    <tr bgcolor="white">
-                        <td>５番</td>
-                        <td><input type="text" placeholder="" id="pass5">%</td>
-                    </tr>
-                    <tr bgcolor="white">
-                        <td>６番</td>
-                        <td><input type="text" placeholder="" id="pass6">%</td>
-                    </tr>
-                    <tr bgcolor="white">
-                        <td>７番</td>
-                        <td><input type="text" placeholder="" id="pass7">%</td>
-                    </tr>
-                    <tr bgcolor="white">
-                        <td>８番</td>
-                        <td><input type="text" placeholder="" id="pass8">%</td>
-                    </tr>
-                    <tr bgcolor="white">
-                        <td>９番</td>
-                        <td><input type="text" placeholder="" id="pass9">%</td>
-                    </tr>
-                    <tr bgcolor="white">
-                        <td>１０番</td>
-                        <td><input type="text" placeholder="" id="pass10">%</td>
-                    </tr>
-                    <tr bgcolor="white">
-                        <td>１１番</td>
-                        <td><input type="text" placeholder="" id="pass11">%</td>
-                    </tr>
-                    <tr bgcolor="white">
-                        <td>１２番</td>
-                        <td><input type="text" placeholder="" id="pass12">%</td>
-                    </tr>
-                    <tr bgcolor="white">
-                        <td>１３番</td>
-                        <td><input type="text" placeholder="" id="pass13">%</td>
-                    </tr>
-                </table>
-            </div>
+            <button type="button" style="background:rgb(0, 102, 255)" class=" btn">
+                <div class="moji">
+                    13番
+                </div>
+            </button>
         </div>
 
 
-    </div>
+    </h3>
+
+
 
 
 

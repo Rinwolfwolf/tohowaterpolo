@@ -348,14 +348,3 @@ function countUpB() {
 }
 
 
-var shot = document.getElementById('shot');
-shot.onclick = function () {
-    var goalin1 = document.getElementById('goalin1').value;
-    var goalin1Number = parseInt(goalin1, 10);
-    var nogoal1 = document.getElementById('nogoal1').value;
-    var nogoal1Number = parseInt(nogoal1, 10);
-    var ket = document.getElementById('ket');
-    var answer = goalin1Number / (goalin1Number + nogoal1Number) * 100;
-    ket.value = answer;
-}
-
